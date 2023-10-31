@@ -4,7 +4,7 @@ package PcsMgt;
 import Details.Microprocessor;
 import Details.Screen;
 import Enumerations.ComputerBrand;
-import Enumerations.ComputerState;
+import Enumerations.MaterialState;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +20,7 @@ public class Computer {
     private Microprocessor microprocessor;
     private Screen screen;
     private String battery;
-    private ComputerBrand brand;
-    private ComputerState state;
+    //initialize the brand to OTHER by default
+    private ComputerBrand brand=ComputerBrand.OTHER;
+    private MaterialState state= MaterialState.IN_STOCK;
 }

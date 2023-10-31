@@ -1,8 +1,8 @@
 package Enumerations;
 
-public enum ComputerState {
+public enum MaterialState {
     IN_STOCK,
-    UNVALABLE,
+    UNAVAILABLE,
     IN_REPAIR,
     SOLD_OUT,
 
