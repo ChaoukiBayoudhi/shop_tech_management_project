@@ -23,4 +23,7 @@ public class Computer {
     //initialize the brand to OTHER by default
     private ComputerBrand brand=ComputerBrand.OTHER;
     private MaterialState state= MaterialState.IN_STOCK;
+    private double price;
+    private double diskSpace;
+    private double ram;
 }
