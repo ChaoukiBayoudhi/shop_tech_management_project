@@ -19,7 +19,7 @@ public class Equipment {
     private Microprocessor microprocessor;
     private double ram;
 
-    public void print(){
+    /*public void print(){
         System.out.println("id: "+id);
         System.out.println("name: "+name);
         System.out.println("price: "+price);
@@ -27,7 +27,9 @@ public class Equipment {
         System.out.println("microprocessor: "+microprocessor);
         System.out.println("ram: "+ram);
 
-    }
+    }*/
+
+    //if we redefine the method toString() we don't need the print() method
     @Override
     //redefinition of toString method
     public String toString() {

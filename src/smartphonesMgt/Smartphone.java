@@ -22,8 +22,11 @@ public class Smartphone extends Equipment {
     private String camera;
     private int diskSpace;
 
-    public void print()
-    {
+//    public void print()
+//    {
+//
+//    }
 
-    }
+    //redefinition of toString method
+
 }

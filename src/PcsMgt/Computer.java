@@ -23,12 +23,25 @@ public class Computer extends Equipment {
     private double diskSpace;
 
     //redefinition of the method print()
-    @Override
+   /* @Override
     public void print(){
         super.print();
         System.out.println("screen: " + screen);
         System.out.println("battery: " + battery);
         System.out.println("brand: " +brand);
         System.out.println("diskSpace: " + diskSpace);
+    }*/
+
+    //redefinition of toString method
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                super.toString()+
+                "screen=" + screen +
+                ", battery='" + battery + '\'' +
+                ", brand=" + brand +
+                ", diskSpace=" + diskSpace +
+                '}';
     }
 }
