@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Objects;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -34,5 +36,21 @@ public class Equipment {
     //redefinition of toString method
     public String toString() {
         return "id: "+id+"\nname: "+name+"\nprice: "+price+"\nstate: "+state+"\nmicroprocessor: "+microprocessor+"\nram: "+ram;
+    }
+    //redefinition of Equals and hashCode methods
+    //we use the id to compare two objects of type Equipment
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Equipment equipment)) return false;
+        //return Objects.equals(getId(), equipment.getId());
+        //return this.id==equipment.id;
+        return this.id==((Equipment)o).id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

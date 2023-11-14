@@ -36,12 +36,12 @@ public class Computer extends Equipment {
 
     @Override
     public String toString() {
-        return "Computer{" +
+        return "Computer{" +'\n' +
                 super.toString()+
-                "screen=" + screen +
-                ", battery='" + battery + '\'' +
-                ", brand=" + brand +
-                ", diskSpace=" + diskSpace +
+                "screen=" + screen +'\n' +
+                ", battery='" + battery + '\n' +
+                ", brand=" + brand +'\n' +
+                ", diskSpace=" + diskSpace +'\n' +
                 '}';
     }
 }

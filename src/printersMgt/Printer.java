@@ -22,4 +22,15 @@ public class Printer extends Equipment {
     private int speedPrinting;
     private int maxNumberPages;
     private PrinterType type;
+
+    @Override
+    public String toString() {
+        return "Printer{" +
+                 super.toString()+
+                "brand=" + brand +
+                ", speedPrinting=" + speedPrinting +
+                ", maxNumberPages=" + maxNumberPages +
+                ", type=" + type +
+                "} " ;
+    }
 }

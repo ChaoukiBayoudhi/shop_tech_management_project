@@ -22,7 +22,8 @@ public class Main {
         //computer.setId(id);
         computer.setId(sc.nextLong());
         System.out.print("name =");
-        sc.next();
+        //sc.next();
+        computer.setName(sc.nextLine());
         computer.setName(sc.nextLine());
         System.out.print("price =");
         computer.setPrice(sc.nextDouble());
@@ -32,7 +33,9 @@ public class Main {
         computer.setBattery(sc.nextLine());
 
         //show the computer information in the screen
-        computer.print();
+        //computer.print();
+        System.out.println();
+        System.out.println(computer);
 
     }
 
